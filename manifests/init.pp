@@ -16,7 +16,7 @@ host { "hostmachine":
 	ip	=> "10.0.2.2",
 }
 
-package { "mysql-5.6":
+package { "mysql-server-5.6":
 	ensure => present,
 	require => Exec["apt-get"],
 }
